@@ -15,12 +15,7 @@ int main()
    string strWith;
    string strDep;
    
-   cout << "Your current balance is: " << balance << endl;
-   cout << "Please choose an action:" << endl;
-   cout << "W = Withdrawl" << endl;
-   cout << "D = Deposit" << endl;
-   cout << "B = Balance" << endl;
-   cout << "Q = Quit" << endl;
+ 
 
    do 
    {
@@ -72,14 +67,14 @@ int main()
       else if (menuAct.at(0) == 'q' || menuAct.at(0) == 'Q')
       {
          cout << "Thank you, come again!" << endl;
-         bool quit = false;
+         quit = false;
       }
       else
       {
          cout << "ERROR! INVALID RESPONSE!";
       }
    } 
-   while (quit);
+   while (quit != true);
 
 
 	return 0;
